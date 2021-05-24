@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breadcrumb</title>
+</head>
+<body>
+    
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    <ul class="breadcrumb">
+      <li>
+        <a href="#">
+          <span class="icon icon-file"></span>
+          <span class="text">File</span>
+        </a>
+      </li>
+      
+        <li>
+        <a href="#">
+          <span class="icon icon-folder-open"></span>
+          <span class="text">Folder</span>
+        </a>
+      </li>
+      
+        <li>
+        <a href="#">
+          <span class="icon icon-code"></span>
+          <span class="text">HTML</span>
+        </a>
+      </li>
+      
+        <li>
+        <a href="#">
+          <span class="icon icon-beaker"></span>
+          <span class="text">Lab</span>
+        </a>
+      </li>
+      
+        <li>
+        <a href="#">
+          <span class="icon icon-home"></span>
+        
+        </a>
+      </li>
+    </ul>
+
+</body>
+
+<style>
+
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+
+font: 20px  sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.breadcrumb li{
+float:right;
+padding:5px;
+border-radius:50px;
+position:relative;
+margin-left:-50px;
+margin-top:3px;
+background:#fff5e6;
+transition:all 0.2s ease-in-out;
+
+}
+.breadcrumb li a{
+
+overflow:hidden;
+border-radius:50px;
+ transition:all 0.2s ease-in-out;
+text-decoration:none;
+width:80px;
+height:50px;
+color:red;
+background:#ffd699;
+text-align:center;
+display:block;
+line-height:50px;
+padding-left:52px;
+padding-right:33.33px;
+
+}
+.breadcrumb li a .icon{
+display:inline-block;
+
+}
+.breadcrumb li a .text{
+display:none;
+opacity:0;
+}
+.breadcrumb li a:hover{
+width:150px;
+background:#ffccff;
+}
+.breadcrumb li a:hover .text{
+display:inline-block;
+opacity:1;
+}
+.breadcrumb li:last-child a{
+padding:0;
+}
+.breadcrumb li:last-child:hover{
+padding:3px;
+margin-top:0;
+}
+
+.breadcrumb li:last-child:hover a{
+width:100px;
+height:60px;
+line-height:60px;
+}
+
+
+</style>
+
+</html>
